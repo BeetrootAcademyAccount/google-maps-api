@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #map {
+      height: 500px;
+      width: 500px;
+    }
+  </style>
+  <body>
+    <div id="map"></div>
+    <label for="city">City:</label>
+    <input id="city" name="city" />
+    <button id="submitCity">Submit</button>
+    <br />
+    <label for="source">Source:</label>
+    <input id="source" name="source" />
+    <label for="destination">Destination:</label>
+    <input id="destination" name="destination" />
+    <button id="showPath">Show Path</button>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Bw9M7GKF0kQcXucon6pDCv0QMR857yA&callback=initMap&libraries=places"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
